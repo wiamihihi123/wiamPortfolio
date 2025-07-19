@@ -46,6 +46,22 @@
 }
 
 /* ===== RÉINITIALISATION ===== */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+}
+
+* {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -96,7 +112,81 @@ img {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0 15px;
+  position: relative;
+}
+
+/* ===== AMÉLIORATIONS MOBILE ===== */
+/* Correction du viewport pour les appareils mobiles */
+@viewport {
+  width: device-width;
+  initial-scale: 1.0;
+}
+
+/* Styles pour les cartes sur mobile */
+@media (max-width: 768px) {
+  /* Ajustement des cartes de compétences */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Ajustement des cartes d'expérience */
+  .experience-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .experience-card {
+    margin: 0;
+    width: 100%;
+  }
+  
+  /* Ajustement des cartes de projets */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Ajustement des marges et paddings */
+  .section {
+    padding: 2.5rem 0;
+  }
+  
+  .section-title {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Media Queries pour le responsive */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  html {
+    font-size: 14px;
+  }
 }
 
 .section {
