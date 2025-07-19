@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiam Ihihi | Développeuse Full Stack - Portfolio Professionnel</title>
+    <meta name="description" content="Portfolio de Wiam Ihihi, Développeuse Full Stack passionnée par la création d'applications web modernes, performantes et accessibles.">
+    <meta name="author" content="Wiam Ihihi">
+    <meta name="keywords" content="développeuse, full stack, portfolio, développement web, applications web, Wiam Ihihi">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+    
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="styles-new.css">
+    
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Feuille de style pour la section Expériences -->
+    <link rel="stylesheet" href="experience-styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Balises Open Graph pour le partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Wiam Ihihi | Développeuse Full Stack">
+    <meta property="og:description" content="Portfolio professionnel de Wiam Ihihi, Développeuse Full Stack passionnée par la création d'applications web modernes et performantes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votresite.com">
+    <meta property="og:image" content="https://votresite.com/images/og-image.jpg">
+    
+    <!-- Balises Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wiam Ihihi | Développeuse Full Stack">
+    <meta name="twitter:description" content="Portfolio professionnel de Wiam Ihihi, Développeuse Full Stack">
+    <meta name="twitter:image" content="https://votresite.com/images/twitter-card.jpg">
+</head>
+<body>
+    <!-- Navigation verticale -->
+    <nav class="nav-vertical">
+        <a href="#accueil" class="active" data-tooltip="Accueil"><i class="fas fa-home"></i></a>
+        <a href="#a-propos" data-tooltip="À propos"><i class="fas fa-user"></i></a>
+        <a href="#competences" data-tooltip="Compétences"><i class="fas fa-code"></i></a>
+        <a href="#experiences" data-tooltip="Expériences"><i class="fas fa-briefcase"></i></a>
+        <a href="#projets" data-tooltip="Projets"><i class="fas fa-project-diagram"></i></a>
+        <a href="#contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <!-- En-tête -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#accueil" class="logo-link">
+                    <span class="logo-text">Wiam Ihihi</span>
+                    <span class="logo-subtitle">Développeuse Full Stack</span>
+                </a>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+            
+            <nav class="nav-desktop" id="nav-desktop">
+                <div class="nav-links">
+                    <a href="#accueil" class="nav-link active" data-section="accueil">
+                        <i class="fas fa-home nav-icon"></i>
+                        <span>Accueil</span>
+                    </a>
+                    <a href="#a-propos" class="nav-link" data-section="a-propos">
+                        <i class="fas fa-user nav-icon"></i>
+                        <span>À propos</span>
+                    </a>
+                    <a href="#competences" class="nav-link" data-section="competences">
+                        <i class="fas fa-code nav-icon"></i>
+                        <span>Compétences</span>
+                    </a>
+                    <a href="#experiences" class="nav-link" data-section="experiences">
+                        <i class="fas fa-briefcase nav-icon"></i>
+                        <span>Expériences</span>
+                    </a>
+                    <a href="#projets" class="nav-link" data-section="projets">
+                        <i class="fas fa-project-diagram nav-icon"></i>
+                        <span>Projets</span>
+                    </a>
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <i class="fas fa-envelope nav-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                <div class="nav-actions">
+                    <a href="cv.html" class="btn btn-primary btn-cv">
+                        <i class="fas fa-download"></i>
+                        <span>Télécharger CV</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="mobile-logo">Wiam Ihihi</div>
+            <button class="mobile-close" id="mobile-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <a href="#accueil" class="mobile-link active" data-section="accueil">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </a>
+            <a href="#a-propos" class="mobile-link" data-section="a-propos">
+                <i class="fas fa-user"></i>
+                <span>À propos</span>
+            </a>
+            <a href="#competences" class="mobile-link" data-section="competences">
+                <i class="fas fa-code"></i>
+                <span>Compétences</span>
+            </a>
+            <a href="#experiences" class="mobile-link" data-section="experiences">
+                <i class="fas fa-briefcase"></i>
+                <span>Expériences</span>
+            </a>
+            <a href="#projets" class="mobile-link" data-section="projets">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projets</span>
+            </a>
+            <a href="#contact" class="mobile-link" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+            <div class="mobile-actions">
+                <a href="cv.html" class="btn btn-primary btn-block">
+                    <i class="fas fa-download"></i>
+                    <span>Télécharger mon CV</span>
+                </a>
+                <a href="cv.html" class="btn btn-outline btn-block">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Voir mon CV en ligne</span>
+                </a>
+            </div>
+            <div class="mobile-social">
+                <a href="https://github.com/wiamihihi" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="h-20"></div>
+                    <a href="https://github.com/wiamihihi" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+
+  
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="greeting">Bonjour, je suis</span>
+                    <h1>Wiam <span>Ihihi</span></h1>
+                    <div class="typing-text">
+                        <span class="text">Développeuse Full Stack</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Je conçois et développe des expériences numériques exceptionnelles qui allient esthétique, performance et convivialité.
+                        Passionnée par l'innovation et les nouvelles technologies, je transforme des idées en solutions web performantes.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Me contacter</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                        <a href="#projets" class="btn btn-outline">
+                            <span>Mes projets</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="images/profil.jpg" alt="Wiam Ihihi" class="profile-img">
+                        <div class="floating-elements">
+                            <span class="floating-element element-1"><i class="fab fa-html5"></i></span>
+                            <span class="floating-element element-2"><i class="fab fa-css3-alt"></i></span>
+                            <span class="floating-element element-3"><i class="fab fa-js"></i></span>
+                            <span class="floating-element element-4"><i class="fab fa-react"></i></span>
+                            <span class="floating-element element-5"><i class="fab fa-node-js"></i></span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-stack-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <a href="#a-propos" class="scroll-down">
+                    <span>Découvrir plus</span>
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">À propos de moi</span>
+                <h2 class="section-title">Qui suis-je ?</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <i class="fas fa-user"></i>
+                    <span></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="images/profil.jpg" alt="Wiam Ihihi" class="profile-about">
+                        <div class="experience-badge">
+                            <span class="number">3+</span>
+                            <span class="text">Années d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <h3>Développeuse Full Stack Passionnée</h3>
+                    <p class="about-text">
+                        <p>Développeuse Full Stack passionnée avec une expertise dans la conception et le développement d'applications web performantes et évolutives. Forte d'une solide expérience dans les technologies front-end (HTML5, CSS3, JavaScript, React) et back-end (Node.js, PHP, bases de données), je mets mes compétences techniques et ma créativité au service de projets innovants.</p>
+                <p>Ma maîtrise des frameworks modernes et des bonnes pratiques de développement me permet de concevoir des solutions robustes, sécurisées et centrées sur l'expérience utilisateur. Rigoureuse et méthodique, je porte une attention particulière à la qualité du code et à l'optimisation des performances.</p>
+                <p>Dotée d'un excellent esprit d'analyse et de résolution de problèmes, je m'épanouis dans des environnages dynamiques où je peux contribuer activement à des projets d'envergure tout en continuant à me perfectionner constamment dans les nouvelles technologies émergentes.</p>
+              </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-title">Nom :</span>
+                            <span class="info-value">Wiam Ihihi</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email :</span>
+                            <a href="mailto:wiamihihi038@gmail.com" class="info-value">wiamihihi038@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Téléphone :</span>
+                            <a href="tel:0680674853" class="info-value">06 80 67 48 53</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Disponibilité :</span>
+                            <span class="info-value available">Disponible pour de nouvelles opportunités</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#" class="btn btn-primary">
+                            <span>Télécharger mon CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Me contacter</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Section Compétences -->
+    <!-- Section Compétences -->
+    <section id="competences" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mes Compétences</span>
+                <h2 class="section-title">Expertise Technique</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <i class="fas fa-code"></i>
+                    <span></span>
+                </div>
+                <p class="section-description">Un aperçu de mes compétences techniques et de mon expertise dans différents domaines du développement web et mobile</p>
+            </div>
+            
+            <!-- Navigation par onglets -->
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="frontend">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Frontend</span>
+                </button>
+                <button class="tab-btn" data-tab="backend">
+                    <i class="fas fa-server"></i>
+                    <span>Backend</span>
+                </button>
+                <button class="tab-btn" data-tab="tools">
+                    <i class="fas fa-tools"></i>
+                    <span>Outils & Autres</span>
+                </button>
+                <button class="tab-btn" data-tab="mobile">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Mobile</span>
+                </button>
+            </div>
+            
+            <!-- Contenu des onglets -->
+            <div class="skills-content">
+                <!-- Onglet Frontend -->
+                <div class="tab-content active" id="frontend">
+                    <div class="skills-grid">
+                        <!-- HTML5 -->
+                        <div class="skill-card" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3 class="skill-name">HTML5</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                                <span class="percentage">95%</span>
+                            </div>
+                            <p class="skill-description">Maîtrise avancée du HTML5, y compris les éléments sémantiques et les API modernes.</p>
+                        </div>
+                        
+                        <!-- CSS3 & SASS -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <h3 class="skill-name">CSS3 & SASS</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                                <span class="percentage">90%</span>
+                            </div>
+                            <p class="skill-description">Styles avancés, animations, design responsive et préprocesseurs CSS avec SASS/SCSS.</p>
+                        </div>
+                        
+                        <!-- JavaScript (ES6+) -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3 class="skill-name">JavaScript (ES6+)</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%"></div>
+                                </div>
+                                <span class="percentage">88%</span>
+                            </div>
+                            <p class="skill-description">Programmation orientée objet, ES6+, manipulation du DOM, programmation asynchrone et fonctionnelle.</p>
+                        </div>
+                        
+                        <!-- React.js -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3 class="skill-name">React.js</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                                <span class="percentage">85%</span>
+                            </div>
+                            <p class="skill-description">Développement d'applications web réactives avec React, Hooks, Context API et React Router.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Onglet Backend -->
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid">
+                        <!-- Node.js -->
+                        <div class="skill-card" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h3 class="skill-name">Node.js</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 87%"></div>
+                                </div>
+                                <span class="percentage">87%</span>
+                            </div>
+                            <p class="skill-description">Développement d'applications serveur avec Node.js, gestion des flux et des événements asynchrones.</p>
+                        </div>
+                        
+                        <!-- Express.js -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="skill-name">Express.js</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                                <span class="percentage">85%</span>
+                            </div>
+                            <p class="skill-description">Création d'API RESTful et d'applications web avec le framework Express.js.</p>
+                        </div>
+                        
+                        <!-- API REST -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h3 class="skill-name">API REST</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%"></div>
+                                </div>
+                                <span class="percentage">88%</span>
+                            </div>
+                            <p class="skill-description">Conception et développement d'API RESTful avec des bonnes pratiques (stateless, HATEOAS, versioning).</p>
+                        </div>
+                        
+                        <!-- MongoDB -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="skill-name">MongoDB</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 82%"></div>
+                                </div>
+                                <span class="percentage">82%</span>
+                            </div>
+                            <p class="skill-description">Conception et gestion de bases de données NoSQL avec MongoDB, Mongoose et agrégations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Onglet Outils & Autres -->
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <!-- Git & GitHub -->
+                        <div class="skill-card" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h3 class="skill-name">Git & GitHub</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                                <span class="percentage">90%</span>
+                            </div>
+                            <p class="skill-description">Gestion de versions avec Git, GitHub, GitLab et flux de travail collaboratif (pull requests, issues, actions).</p>
+                        </div>
+                        
+                        <!-- Docker -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h3 class="skill-name">Docker</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 78%"></div>
+                                </div>
+                                <span class="percentage">78%</span>
+                            </div>
+                            <p class="skill-description">Conteneurisation d'applications avec Docker, Docker Compose et gestion des images.</p>
+                        </div>
+                        
+                        <!-- CI/CD -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <h3 class="skill-name">CI/CD</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                                <span class="percentage">80%</span>
+                            </div>
+                            <p class="skill-description">Mise en place de pipelines d'intégration et de déploiement continus avec GitHub Actions, GitLab CI.</p>
+                        </div>
+                        
+                        <!-- Figma -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h3 class="skill-name">Figma</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                                <span class="percentage">75%</span>
+                            </div>
+                            <p class="skill-description">Conception d'interfaces utilisateur, maquettes et prototypes avec Figma et outils de design.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Onglet Mobile -->
+                <div class="tab-content" id="mobile">
+                    <div class="skills-grid">
+                        <!-- React Native -->
+                        <div class="skill-card" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3 class="skill-name">React Native</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                                <span class="percentage">75%</span>
+                            </div>
+                            <p class="skill-description">Développement d'applications mobiles multiplateformes avec React Native.</p>
+                        </div>
+                        
+                        <!-- Flutter -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="skill-name">Flutter</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%"></div>
+                                </div>
+                                <span class="percentage">65%</span>
+                            </div>
+                            <p class="skill-description">Développement d'applications mobiles natives avec Flutter et Dart.</p>
+                        </div>
+                        
+                        <!-- UI/UX Mobile -->
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="skill-name">UI/UX Mobile</h3>
+                            <div class="skill-level">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                                <span class="percentage">80%</span>
+                            </div>
+                            <p class="skill-description">Conception d'interfaces utilisateur intuitives et expériences utilisateur optimisées pour mobile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Appel à l'action -->
+            <div class="skills-cta" data-aos="fade-up">
+                <p>Vous souhaitez en savoir plus sur mes compétences ?</p>
+                <a href="#contact" class="btn btn-primary">
+                    <span>Contactez-moi</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+              
+        </div>
+    </section>
+
+    <!-- Section Expériences Professionnelles -->
+    <section id="experiences" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Expériences Professionnelles</h2>
+                <p class="section-subtitle">Un aperçu de mon parcours et de mes réalisations</p>
+            </div>
+            
+            <!-- Navigation par onglets -->
+            <div class="experience-tabs">
+                <button class="tab-btn active" data-tab="all">
+                    <i class="fas fa-briefcase"></i> Toutes
+                </button>
+                <button class="tab-btn" data-tab="development">
+                    <i class="fas fa-laptop-code"></i> Développement
+                </button>
+                <button class="tab-btn" data-tab="teaching">
+                    <i class="fas fa-chalkboard-teacher"></i> Enseignement
+                </button>
+                <button class="tab-btn" data-tab="hackathon">
+                    <i class="fas fa-code-branch"></i> Projets
+                </button>
+            </div>
+            
+            <div class="experience-cards">
+                <!-- Carte Expérience 1 -->
+                <div class="experience-card" data-category="development">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="experience-title">Développeuse Web Full Stack</h3>
+                        <span class="experience-company">Agence Digitale MaxMind - Casablanca</span>
+                        <div class="experience-date">
+                            <i class="far fa-calendar-alt"></i> Mars 2025 (1 mois) - Stage de fin de formation
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p class="experience-description">
+                            Développement complet d'une application web de gestion budgétaire nommée Expense Tracker.
+                        </p>
+                        
+                        <div class="experience-details">
+                            <h4>Réalisations :</h4>
+                            <ul class="achievements-list">
+                                <li>Analyse des besoins et conception fonctionnelle de la plateforme</li>
+                                <li>Développement du frontend en JavaScript, avec une interface utilisateur fluide et responsive</li>
+                                <li>Création du backend en PHP, connecté à une base de données MySQL</li>
+                                <li>Mise en place de l'authentification des utilisateurs</li>
+                                <li>Gestion des catégories de dépenses et revenus</li>
+                                <li>Affichage de statistiques sous forme de graphiques</li>
+                                <li>Participation à des réunions de sprint Agile</li>
+                                <li>Rédaction de documentation technique pour la maintenabilité du projet</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-progress">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">XAMPP</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carte Expérience 2 -->
+                <div class="experience-card" data-category="teaching">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="experience-title">Enseignante de soutien scolaire</h3>
+                        <span class="experience-company">Freelance - Casablanca</span>
+                        <div class="experience-date">
+                            <i class="far fa-calendar-alt"></i> 2021 - 2025 (en parallèle des études)
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p class="experience-description">
+                            Aide aux élèves du collège et du lycée pour améliorer leurs résultats scolaires.
+                        </p>
+                        
+                        <div class="experience-details">
+                            <h4>Réalisations :</h4>
+                            <ul class="achievements-list">
+                                <li>Cours particuliers personnalisés en mathématiques, physique et français</li>
+                                <li>Mise en place d'un programme pédagogique adapté au niveau de chaque élève</li>
+                                <li>Préparation ciblée aux examens régionaux et nationaux</li>
+                                <li>Animation de cours en présentiel et à distance (via Zoom)</li>
+                                <li>Utilisation de supports interactifs : fiches d'exercices, quiz, présentations</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-progress">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Pédagogie</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Outils numériques</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-tags">
+                            <span class="tag">Pédagogie</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Organisation</span>
+                            <span class="tag">Adaptation</span>
+                            <span class="tag">Gestion de groupe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carte Expérience 3 -->
+                <div class="experience-card" data-category="hackathon">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="experience-title">Application web de gestion de factures et de stock</h3>
+                        <span class="experience-company">Hackathon en équipe</span>
+                        <div class="experience-date">
+                            <i class="far fa-calendar-alt"></i> Mai 2025 (48 heures)
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <p class="experience-description">
+                            Réalisation d'un prototype fonctionnel d'application de facturation et de gestion de stock en 48h.
+                        </p>
+                        
+                        <div class="experience-details">
+                            <h4>Réalisations :</h4>
+                            <ul class="achievements-list">
+                                <li>Développement frontend avec React.js pour une interface dynamique et moderne</li>
+                                <li>Création du backend en Laravel avec base de données MySQL</li>
+                                <li>Implémentation de la gestion des produits, catégories et clients</li>
+                                <li>Développement d'un générateur de factures PDF</li>
+                                <li>Utilisation de GitHub pour la collaboration en équipe</li>
+                                <li>Présentation finale du projet devant un jury professionnel</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-progress">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Laravel</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 82%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Travail d'équipe</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Travail d'équipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-cta">
+                <p>Intéressé par mon parcours ?</p>
+                <a href="#contact" class="btn btn-primary">
+                    <span>Contactez-moi</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+            </div>
+            
+        
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes Projets Récents</h2>
+                <p>Découvrez une sélection de mes réalisations professionnelles et personnelles</p>
+            </div>
+            
+            <div class="projects-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/cap.png" alt="cap vers avenir">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir la démo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Code source">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Cap vers l'avenir</h3>
+                            <span class="project-badge">Full Stack</span>
+                        </div>
+                        <p class="project-description">
+                            "Cap vers Avenir" est une application web développée dans le cadre de mon projet de fin d’études, ayant pour objectif d'accompagner les élèves de terminale (bac) dans le choix de leur filière universitaire ou formation professionnelle. L’application fournit une interface simple, intuitive et attractive pour guider les utilisateurs selon leur profil, leurs préférences et les filières disponibles.    </p>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span>React.js</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/eleckayati.png" alt="Boutique en ligne">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir la démo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Code source">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Boutique en ligne</h3>
+                            <span class="project-badge">Full Stack</span>
+                        </div>
+                        <p class="project-description">
+                            ElecKayati est une application web développée dans le cadre d’un projet personnel visant à simplifier la gestion des produits d’un magasin spécialisé dans la vente de matériel électronique et électrique. L’objectif est de fournir une interface claire, moderne et fonctionnelle pour gérer efficacement les produits, les catégories, et le stock en temps réel. </p>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>JavaScript</span>
+                                <span>MySQL</span>
+                                <span>HTML & CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/expense.png" alt="Gestionnaire de Dépenses">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir la démo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Code source">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Gestionnaire de Dépenses</h3>
+                            <span class="project-badge">Full Stack</span>
+                        </div>
+                        <p class="project-description">
+                            Expense Tracker est une application web développée lors de mon stage de fin de formation chez l’agence digitale MaxMind. L’objectif principal du projet était de concevoir une plateforme permettant aux utilisateurs de suivre et gérer leurs revenus et dépenses de manière simple, intuitive et sécurisée.   </p>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>JavaScript</span>
+                                <span>Chart.js</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/socielMedia.png" alt="Réseau Social">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir la démo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Code source">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Réseau Social</h3>
+                            <span class="project-badge">Full Stack</span>
+                        </div>
+                        <p class="project-description">
+                            Social Media App est une application web inspirée des plateformes sociales modernes, développée dans un cadre personnel afin de maîtriser les concepts avancés du développement full stack. Ce projet a pour but de permettre aux utilisateurs de créer un compte, publier du contenu, interagir avec d’autres utilisateurs, et gérer leur propre profil.   </p>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span>MERN Stack</span>
+                                <span>Socket.io</span>
+                                <span>Redux</span>
+                                <span>JWT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+
+</div>
+</div>
+
+
+            <div class="projects-cta">
+                <p>Vous avez un projet en tête ?</p>
+                <a href="#contact" class="btn btn-primary">
+                    Parlons-en
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-moi</h2>
+                <p>N'hésitez pas à me contacter pour discuter de votre projet ou pour toute question</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:wiamihihi038@gmail.com">wiamihihi038@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <a href="tel:+212680674853">+212 680 674 853</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Localisation</h4>
+                            <p>Casablanca, Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Réseaux sociaux</h4>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/wiamihihi" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/wiamihihi" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <form id="contact-form" action="https://formspree.io/f/mayggeqy" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Votre nom <span class="required">*</span></label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Votre email <span class="required">*</span></label>
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet <span class="required">*</span></label>
+                            <div class="input-group">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message <span class="required">*</span></label>
+                            <div class="input-group">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group terms">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                J'accepte la <a href="#">politique de confidentialité</a> et que mes informations soient utilisées pour me recontacter.
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Colonne 1: À propos -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span>Wiam Ihihi</span>
+                    </div>
+                    <p class="footer-about-text">
+                        Développeuse Full Stack passionnée par la création d'expériences web modernes, intuitives et performantes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/wiamihihi" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/wiamihihi" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Colonne 2: Liens rapides -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-list">
+                        <li><a href="#accueil"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                        <li><a href="#a-propos"><i class="fas fa-chevron-right"></i> À propos</a></li>
+                        <li><a href="#competences"><i class="fas fa-chevron-right"></i> Compétences</a></li>
+                        <li><a href="#experiences"><i class="fas fa-chevron-right"></i> Expériences</a></li>
+                        <li><a href="#projets"><i class="fas fa-chevron-right"></i> Projets</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 3: Compétences -->
+                <div class="footer-skills">
+                    <h3 class="footer-title">Compétences</h3>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-check"></i> Développement Web</li>
+                        <li><i class="fas fa-check"></i> Applications Mobiles</li>
+                        <li><i class="fas fa-check"></i> UI/UX Design</li>
+                        <li><i class="fas fa-check"></i> Base de données</li>
+                        <li><i class="fas fa-check"></i> DevOps & Cloud</li>
+                        <li><i class="fas fa-check"></i> Sécurité Web</li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 4: Newsletter -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Abonnez-vous pour recevoir mes dernières actualités et projets.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Votre adresse email" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> wiamihihi038@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i> +212 680 674 853</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span id="current-year">2023</span> Wiam Ihihi. Tous droits réservés.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <span class="separator">|</span>
+                    <a href="#">Politique de confidentialité</a>
+                    <span class="separator">|</span>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mettre à jour l'année du copyright automatiquement
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="script.js"></script>
+    <script src="experience-script.js"></script>
+</body>
+</html>
